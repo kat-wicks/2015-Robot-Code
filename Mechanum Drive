@@ -1,4 +1,3 @@
-
 /*----------------------------------------------------------------------------*/
 /* Copyright (c) FIRST 2008. All Rights Reserved.                             */
 /* Open Source Software - may be modified and shared by FRC teams. The code   */
@@ -34,16 +33,14 @@ public class RobotTemplate extends SimpleRobot {
     }
     
     public void operatorControl() {
-        //variables needed for mecanum drive, primes for competition to start
         double xValue = 0.0;
         double yValue = 0.0;
         double rotation = 0.0;
         double gyroAngle;
                 
          while(isOperatorControl() && isEnabled()) {
-             getWatchdog().feed();
-            
-            //sets variables to the values from joysticks  
+             //getWatchdog().feed();
+              
              xValue = rightJoystick.getX();
              yValue = rightJoystick.getY();
              rotation = leftJoystick.getX();
