@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+ 
 package edu.wpi.first.wpilibj.templates;
-
 
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.Joystick;
@@ -14,17 +14,19 @@ public class RobotTemplate extends SimpleRobot{
     private Joystick leftJoystick = new Joystick(2);
     private Joystick rightJoystick = new Joystick(1);
     
-    
+    //robot picks up totes, drives forward in autonomous
     public void autonomous(){
         
     }
     
+    //driver controls the robot in teleop
     public void teleop(){
         while(isOperatorControl() && isEnabled()) {
             
         }
     }
     
+    //starts any mechanisms like camera or compressors
     public void init(){
         
     }
