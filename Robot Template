@@ -20,7 +20,7 @@ public class RobotTemplate extends SimpleRobot{
     }
     
     //driver controls the robot in teleop
-    public void teleop(){
+    public void operatorControl(){
         while(isOperatorControl() && isEnabled()) {
             
         }
